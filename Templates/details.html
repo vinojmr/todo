@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+{% for i in task %}
+<h3>Task Name : {{i.name}}</h3><br>
+<h5>Priority : {{i.priority}}</h5><br>
+{%endfor%}
+{% endblock%}

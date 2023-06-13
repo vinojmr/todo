@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="contaier">
+   <div class="row">
+      <div class="col-md-4">
+        <div class="shadow card">
+          {% for i in lists %}
+          <div class="card body">
+            Task {{i.id}}
+            <h4 class="card-title">{{i.name}}</h4>
+            <div class="card-body">Priority : {{i.priority}}</div>
+              <div style="color:red">{{i.date}}</div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+   </div>
+</div>
+{% endblock %}
